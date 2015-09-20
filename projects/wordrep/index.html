@@ -1,0 +1,140 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Word Representation</title>
+    <meta name="author" content="Fei Sun" />
+
+    <link rel="start" href="/" />
+
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="../../css/syntax.css" type="text/css" />
+
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="../../css/screen.css" type="text/css" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19401216-1']);
+  _gaq.push(['_setDomainName', 'ofey.me']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body id="">
+<div id="site">
+
+  <div id="header">
+    <h1>
+  	  <a class="ofey" href="http://ofey.me" title="Home Page">Fei Sun</a>
+  	  <!--<span class="byline">&larr; <a href="/">Fei Sun</a></span> !-->
+    </h1>
+    <ul class="nav">
+      <li><a class="home" href="http://ofey.me/index.html">Home</a></li>
+      <li><a class="research" href="http://ofey.me/research.html">Research</a></li>
+      <li><a class="pubs" href="http://ofey.me/publication.html">Publications</a></li>
+      <li><a  href="http://ofey.me/resume/Fei Sun.pdf">Resume</a></li>
+    </ul>
+  </div>
+
+
+<div id="page">
+
+  <h1 class="emphnext">Learning Word Representation by Jointly Modeling Syntagmatic and Paradigmatic Relations</h1>
+
+  <hr />
+<h2 id="introduction">Introduction</h2>
+<p>Existing models for learning word representations focus on either syntagmatic or paradigmatic relations alone. We propose two novel distributional models (<code>PDC</code> and <code>HDC</code>) for word representation using both syntagmatic and paradigmatic relations via a joint training objective. The proposed models are trained on a public Wikipedia corpus, and the learned representations are evaluated on word analogy and word similarity tasks. The results demonstrate that the proposed models can perform significantly better than all the state-of-the-art baseline methods on both tasks.</p>
+<h2 id="data">Data</h2>
+<ul>
+<li>Pre-trained word vectors
+<ul style="margin-top:0em">
+<li>Training corpus: <a href="https://drive.google.com/file/d/0BwF2zP8bVaQreFFaOGM0M2V2NEE/view?usp=sharing">Wikipedia 2010</a>
+<ul style="margin-top:0em">
+<li>PDC <a href="https://drive.google.com/file/d/0BwF2zP8bVaQrc2ptLXhkTmx5SE0/view?usp=sharing">50d</a> <a href="https://drive.google.com/file/d/0BwF2zP8bVaQrX3p2SW03RnV1dE0/view?usp=sharing
+">100d</a> <a href="https://drive.google.com/file/d/0BwF2zP8bVaQrekJtaXVnbVRVREk/view?usp=sharing">300d</a></li>
+<li>HDC <a href="https://drive.google.com/file/d/0BwF2zP8bVaQrZVI4UWpiR3gzVUU/view?usp=sharing">50d</a> <a href="https://drive.google.com/file/d/0BwF2zP8bVaQrM1dfTHZTbEJmdzQ/view?usp=sharing">100d</a> <a href="https://drive.google.com/file/d/0BwF2zP8bVaQrNG5vVEthSzVTRGc/view?usp=sharing">300d</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="code">Code</h2>
+<ul>
+<li>Download the <a href="https://github.com/FeiSun/WordRep">code</a> (licensed under the <a href="http://www.gnu.org/licenses/">GPL V3.0</a>)</li>
+</ul>
+<h2 id="paper">Paper</h2>
+<p><code>Note:</code> There is a mistake (missing the minus sign) in negative sampling objective function of PDC and PDC, and the precision of syntactic in Table 2 left out the gram9 subtask in the paper of ACL Anthology version.
+    These have been fixed. </p>
+<p>Fei Sun, Jiafeng Guo, Yanyan Lan, Jun Xu, and Xueqi Cheng. <a href="http://ofey.me/papers/wordrep_acl2015.pdf">Learning word representations by jointly modeling syntagmatic and paradigmatic relations</a>. In Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics.</p>
+<p><strong>Citation</strong></p>
+<div class="highlight"><pre><code class="tex">@inproceedings<span class="nb">{</span>Fei:Learning,
+author = <span class="nb">{</span>Fei Sun and Jiafeng Guo and Yanyan Lan and Jun Xu and Xueqi Cheng<span class="nb">}</span>,
+title = <span class="nb">{</span>Learning Word Representations by Jointly Modeling Syntagmatic and Paradigmatic Relations<span class="nb">}</span>,
+booktitle = <span class="nb">{</span>Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)<span class="nb">}</span>,
+year = <span class="nb">{</span>2015<span class="nb">}</span>,
+publisher = <span class="nb">{</span>Association for Computational Linguistics<span class="nb">}</span>,
+pages = <span class="nb">{</span>136--145<span class="nb">}</span>,
+location = <span class="nb">{</span>Beijing, China<span class="nb">}</span>,
+url = <span class="nb">{</span>http://aclweb.org/anthology/P15-1014<span class="nb">}</span>
+<span class="nb">}</span>
+</code></pre></div>
+
+
+</div><!-- End Page -->
+
+
+
+  <div id="footer">
+  	<address>
+  		<span class="copyright">
+  			Content by <a href="/info/site.html">Ofey</a>. Design by
+  			<a href="http://mark.reid.name/">Mark Reid</a>
+  			<br/>
+  			(<a rel="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Some rights reserved</a>)
+  		</span>
+  		<span class="engine">
+  			Powered by <a href="http://github.com/mojombo/jekyll/" title="A static, minimalist CMS">Jekyll</a>
+  		</span>
+  	</address>
+  </div>
+
+</div>
+
+   <!-- MathJax -->
+   <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+   </script>
+   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!--[if IE 6]>
+<script type="text/javascript">
+	/*Load jQuery if not already loaded*/ if(typeof jQuery == 'undefined'){ document.write("<script type=\"text/javascript\"   src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js\"></"+"script>"); var __noconflict = true; }
+	var IE6UPDATE_OPTIONS = {
+		icons_path: "http://static.ie6update.com/hosted/ie6update/images/"
+	}
+</script>
+<script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script>
+<![endif]-->
+
+
+</body>
+</html>
